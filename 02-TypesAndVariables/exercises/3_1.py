@@ -1,4 +1,4 @@
-# ===== Zadanie 12 ====
+# ===== Zadanie 8 ====
 
 company = "ABC Data"                    # nazwa firmy jako tekst
 phone = "555-123-009"                   # numer telefonu jako tekst

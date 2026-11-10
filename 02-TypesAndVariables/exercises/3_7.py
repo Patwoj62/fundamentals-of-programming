@@ -1,8 +1,8 @@
-# ===== Zadanie 18 ====
+# ===== Zadanie 14 ====
 
-length = 5                              # długość bryły
-width = 4                               # szerokość bryły
-height = 3                              # wysokość bryły
-volume = length * width * height        # obliczenie objętości
+import math                                   # import modułu matematycznego
 
-print("Volume =", volume)               # wyświetlenie objętości
+h = 1.75                                      # wysokość obserwatora
+d = 3.57 * math.sqrt(h)                       # obliczenie odległości
+
+print("Distance:", round(d, 2), "km")         # wyświetlenie wyniku

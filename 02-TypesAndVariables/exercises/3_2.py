@@ -1,4 +1,4 @@
-# ===== Zadanie 13 ====
+# ===== Zadanie 9 ====
 
 number1 = 71                            # pierwsza liczba
 number2 = 14                            # druga liczba

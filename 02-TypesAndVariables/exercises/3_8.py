@@ -1,8 +1,8 @@
-# ===== Zadanie 19 ====
+# ===== Zadanie 15 ====
 
-celsius = 20                            # temperatura w stopniach Celsjusza
-fahrenheit = (celsius * 9 / 5) + 32     # konwersja na stopnie Fahrenheita
+import math                                   # import modułu matematycznego
 
-print("Celsius =", celsius)             # wyświetlenie temperatury wejściowej
+h = 20                                        # wysokość okna hotelowego
+d = 3.57 * math.sqrt(h)                       # obliczenie odległości
 
-print("Fahrenheit =", fahrenheit)       # wyświetlenie temperatury po konwersji
+print("Distance:", round(d, 2), "km")         # wyświetlenie wyniku

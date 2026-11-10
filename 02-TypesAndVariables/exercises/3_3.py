@@ -1,4 +1,4 @@
-# ===== Zadanie 14 ====
+# ===== Zadanie 10 ====
 
 x = 7                                   # przypisanie wartości do x
 y = 34                                  # przypisanie wartości do y

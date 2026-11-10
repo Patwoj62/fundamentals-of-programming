@@ -1,7 +1,11 @@
-# ===== Zadanie 20 ====
+# ===== Zadanie 16 ====
 
-current_year = 2026                     # bieżący rok
-birth_year = 2005                       # rok urodzenia
-age = current_year - birth_year         # obliczenie wieku
+total = 8000000000                            # populacja świata
+north = 7200000000                            # populacja półkuli północnej
+south = total - north                         # populacja półkuli południowej
 
-print("Age =", age)                     # wyświetlenie wieku
+print("World population:", total)             # wyświetlenie populacji świata
+print("Northern Hemisphere:", north)          # liczba mieszkańców północy
+print("Northern Hemisphere in %:", north / total * 100)  # procent mieszkańców północy
+print("Southern Hemisphere:", south)          # liczba mieszkańców południa
+print("Southern Hemisphere in %:", south / total * 100)  # procent mieszkańców południa

@@ -1,10 +1,9 @@
-# ===== Zadanie 21 ====
+# ===== Zadanie 17 ====
 
-grade1 = 4                              # pierwsza ocena
-grade2 = 5                              # druga ocena
-grade3 = 3                              # trzecia ocena
-grade4 = 5                              # czwarta ocena
+math = 5                                      # ocena z matematyki
+art = 4                                       # ocena z plastyki
+music = 5                                     # ocena z muzyki
+history = 3                                   # ocena z historii
+average = (math + art + music + history) / 4  # obliczenie średniej
 
-average = (grade1 + grade2 + grade3 + grade4) / 4  # średnia ocen
-
-print("Average =", average)             # wyświetlenie średniej
+print("Average grade is", average)            # wyświetlenie średniej

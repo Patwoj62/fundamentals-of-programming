@@ -1,4 +1,4 @@
-# ===== Zadanie 15 ====
+# ===== Zadanie 11 ====
 
 speed_kmh = 70                          # prędkość w kilometrach na godzinę
 speed_ms = speed_kmh / 3.6              # przeliczenie na metry na sekundę

@@ -1,10 +1,8 @@
-# ===== Zadanie 17 ====
+# ===== Zadanie 13 ====
 
-length = 10                             # długość prostokąta
-width = 6                               # szerokość prostokąta
-area = length * width                   # obliczenie pola
-perimeter = 2 * (length + width)        # obliczenie obwodu
+import math                                   # import modułu matematycznego
 
-print("Area =", area)                   # wyświetlenie pola
+h = float(input("Height in meters: "))        # pobranie wysokości obserwatora
+d = 3.57 * math.sqrt(h)                       # obliczenie odległości do horyzontu
 
-print("Perimeter =", perimeter)         # wyświetlenie obwodu
+print("Distance to horizon:", round(d, 2), "km")  # wyświetlenie wyniku

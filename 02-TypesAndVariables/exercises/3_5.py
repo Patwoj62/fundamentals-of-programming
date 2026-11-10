@@ -1,4 +1,4 @@
-# ===== Zadanie 16 ====
+# ===== Zadanie 12 ====
 
 import math                             # import biblioteki matematycznej
 
