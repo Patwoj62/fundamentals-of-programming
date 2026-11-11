@@ -1,25 +1,31 @@
 # ===== Zadanie 28 =====
 
-seconds = int(input('Enter number of seconds: '))  # pobranie czasu
+import time  # moduł obsługujący opóźnienia
 
-while seconds > 0:  # odliczanie do zera
+countdown = int(input("Enter the number of seconds to count down: "))  # pobranie liczby sekund
 
-    if seconds == 5:  # pięć sekund
-        print('five')
+while countdown > 0:  # wykonuj dopóki licznik jest większy od zera
 
-    elif seconds == 4:  # cztery sekundy
-        print('four')
+    if countdown == 5:  # gdy pozostało 5 sekund
+        print("five")  # wyświetlenie słowa five
 
-    elif seconds == 3:  # trzy sekundy
-        print('three')
+    elif countdown == 4:  # gdy pozostały 4 sekundy
+        print("four")  # wyświetlenie słowa four
 
-    elif seconds == 2:  # dwie sekundy
-        print('two')
+    elif countdown == 3:  # gdy pozostały 3 sekundy
+        print("three")  # wyświetlenie słowa three
 
-    elif seconds == 1:  # jedna sekunda
-        print('one')
+    elif countdown == 2:  # gdy pozostały 2 sekundy
+        print("two")  # wyświetlenie słowa two
 
-    else:  # pozostałe sekundy
-        print(seconds)
+    elif countdown == 1:  # gdy pozostała 1 sekunda
+        print("one")  # wyświetlenie słowa one
 
-    seconds -= 1  # zmniejszenie licznika
+    else:  # dla pozostałych wartości
+        print(countdown)  # wyświetlenie liczby
+
+    countdown -= 1  # zmniejszenie licznika o 1
+
+    time.sleep(1)  # odczekanie jednej sekundy
+
+print("Time's up!")  # zakończenie odliczania
