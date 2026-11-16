@@ -1,15 +1,13 @@
 # ===== Zadanie 25 =====
 
-numbers = [15, 8, 31, 47, 2, 19]  # lista liczb
+names = ["Genowefa", "Onufry", "Celestyna", "Alojzy", "Pankracy"]  # lista imion
 
-total = 0  # suma elementów
-i = 0  # indeks
+longest_name = names[0]  # początkowo pierwsze imię
 
-while i < len(numbers):  # działa do końca listy
-    total += numbers[i]  # dodaje element do sumy
-    i += 1  # kolejny indeks
+for name in names:  # przejście po imionach
 
-average = total / len(numbers)  # oblicza średnią
+    if len(name) > len(longest_name):  # sprawdza długość tekstu
+        longest_name = name  # zapamiętuje najdłuższe imię
 
-print("Array:", numbers)  # wyświetla listę
-print("Average:", average)  # wyświetla średnią
+print("Names:", " ".join(names))  # wyświetla wszystkie imiona
+print("Longest name:", longest_name)  # wyświetla najdłuższe imię

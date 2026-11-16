@@ -1,13 +1,15 @@
 # ===== Zadanie 20 =====
 
-numbers = [34, 7, 19, 4, 21, 8]  # lista liczb całkowitych
+numbers = [15, 8, 31, 47, 2, 19]  # lista liczb
 
-count = 0  # licznik liczb parzystych
-i = 0  # indeks
+print("Existing array:", end=" ")  # napis bez nowej linii
 
-while i < len(numbers):  # przejście po wszystkich elementach
-    if numbers[i] % 2 == 0:  # sprawdza parzystość
-        count += 1  # zwiększa licznik
-    i += 1  # kolejny indeks
+for number in numbers:  # przejście po liście
+    print(number, end=" ")  # wyświetla element
 
-print("Even numbers:", count)  # wyświetla wynik
+print()  # nowa linia
+
+print("Reverse array:", end=" ")  # nagłówek
+
+for i in range(len(numbers) - 1, -1, -1):  # przejście od końca do początku
+    print(numbers[i], end=" ")  # wyświetla odwróconą kolejność

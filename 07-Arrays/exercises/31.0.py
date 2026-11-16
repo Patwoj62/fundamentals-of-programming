@@ -1,42 +1,12 @@
 # ===== Zadanie 28 =====
 
-def compare(array1, array2):  # funkcja porównująca listy
+# Prints numbers from first array that do not appear in second array
+array1 = [4, 36, 12, 28, 9, 44, 5]  # pierwsza lista liczb
+array2 = [5, 1, 36]  # druga lista liczb
 
-    if len(array1) != len(array2):  # różna liczba elementów
-        return False  # tablice są różne
+print("Numbers not present in second array:")  # nagłówek
 
-    for i in range(len(array1)):  # przejście po indeksach
+for number in array1:  # przechodzi po pierwszej tablicy
 
-        if array1[i] != array2: # porównanie elementów
-            return False  # znaleziono różnicę
-
-    return True  # tablice są identyczne
-
-
-arr1 = ["water", "book", "sky"]  # pierwsza lista
-arr2 = ["water", "book", "sky"]  # druga lista
-
-print("Array1:", arr1)
-print("Array2:", arr2)
-print("Comparison:", compare(arr1, arr2))
-
-arr1 = [True, False]  # pierwsza lista
-arr2 = [True, False, True]  # druga lista
-
-print("Array1:", arr1)
-print("Array2:", arr2)
-print("Comparison:", compare(arr1, arr2))
-
-arr1 = [5, 3, 1]  # pierwsza lista
-arr2 = [5, 3, 1]  # druga lista
-
-print("Array1:", arr1)
-print("Array2:", arr2)
-print("Comparison:", compare(arr1, arr2))
-
-arr1 = [3, 2, 1]  # pierwsza lista
-arr2 = [3, 2]  # druga lista
-
-print("Array1:", arr1)
-print("Array2:", arr2)
-print("Comparison:", compare(arr1, arr2))
+    if number not in array2:  # sprawdza czy liczby nie ma w drugiej tablicy
+        print(number)  # wyświetla liczbę

@@ -1,15 +1,15 @@
 # ===== Zadanie 21 =====
 
-numbers = [15, 8, 31, 47, 2, 19]  # lista liczb
+numbers = [8, 2, 5, 1, 9]  # lista liczb
 
-print("Existing array:", end=" ")  # napis bez nowej linii
+print("Array:", end=" ")  # nagłówek
 
-for number in numbers:  # przejście po liście
-    print(number, end=" ")  # wyświetla element
+for number in numbers:  # przejście po elementach
+    print(number, end=" ")  # wyświetla liczby
 
 print()  # nowa linia
 
-print("Reverse array:", end=" ")  # nagłówek
+print("2nd power:", end=" ")  # nagłówek
 
-for i in range(len(numbers) - 1, -1, -1):  # przejście od końca do początku
-    print(numbers[i], end=" ")  # wyświetla odwróconą kolejność
+for number in numbers:  # przejście po elementach
+    print(number ** 2, end=" ")  # druga potęga liczby

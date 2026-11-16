@@ -1,13 +1,10 @@
 # ===== Zadanie 26 =====
 
-names = ["Genowefa", "Onufry", "Celestyna", "Alojzy", "Pankracy"]  # lista imion
+def star(n):  # funkcja zwraca podaną liczbę gwiazdek
 
-longest_name = names[0]  # początkowo pierwsze imię
+    return "*" * n  # tworzy napis z gwiazdek
 
-for name in names:  # przejście po imionach
+numbers = [2, 6, 4, 9, 7]  # lista liczb
 
-    if len(name) > len(longest_name):  # sprawdza długość tekstu
-        longest_name = name  # zapamiętuje najdłuższe imię
-
-print("Names:", " ".join(names))  # wyświetla wszystkie imiona
-print("Longest name:", longest_name)  # wyświetla najdłuższe imię
+for number in numbers:  # przechodzi po wszystkich liczbach
+    print(str(number) + ":", star(number))  # wyświetla liczbę i gwiazdki

@@ -1,17 +1,13 @@
 # ===== Zadanie 23 =====
 
-numbers = [-15, 8, -31, 47, -2, 19]  # lista liczb
+numbers = [15, 8, 31, 47, 2, 19]  # lista liczb
 
-minimum = numbers[0]  # początkowe minimum
-maximum = numbers[0]  # początkowe maksimum
+total = 0  # suma elementów
 
-for number in numbers:  # przejście po elementach
+for number in numbers:  # przejście po liczbach
+    total += number  # dodaje liczbę do sumy
 
-    if number < minimum:  # znalezienie nowego minimum
-        minimum = number  # zapis minimum
+average = total / len(numbers)  # oblicza średnią
 
-    if number > maximum:  # znalezienie nowego maksimum
-        maximum = number  # zapis maksimum
-
-print("Minimum:", minimum)  # wyświetla minimum
-print("Maximum:", maximum)  # wyświetla maksimum
+print("Array:", numbers)  # wyświetla listę
+print("Average:", average)  # wyświetla średnią
