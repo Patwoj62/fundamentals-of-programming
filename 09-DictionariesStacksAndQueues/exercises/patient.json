@@ -1,0 +1,9 @@
+{
+    "patient_record": {
+        "patient_id": "P001234",
+        "first_name": "John",
+        "last_name": "Doe",
+        "date_of_birth": "1985-05-15",
+        "gender": "Male"
+    }
+}
