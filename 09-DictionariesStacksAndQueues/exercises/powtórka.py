@@ -21,3 +21,44 @@ while len(stack) > 0:  # wykonuj dopóki stos nie jest pusty
     remaining_sum += stack.pop()  # pobierz element i dodaj do sumy
 
 print("Sum of remaining elements:", remaining_sum)  # wyświetlenie wyniku
+
+student = {  # utworzenie słownika
+    'name': 'John',  # imię, str
+    'age': 22,  # wiek, int
+    'major': 'Computer Science'  # kierunek studiów, str
+}
+
+print(student['name'])  # odczyt wartości dla klucza name
+
+student['grade'] = 'A'  # dodanie nowej pary klucz-wartość
+
+student['age'] = 23  # modyfikacja istniejącej wartości
+
+del student['major']  # usunięcie elementu o kluczu major
+
+print(student)  # wyświetlenie końcowej zawartości słownika
+
+fruits = {  # słownik owoców
+    'apple': 3,
+    'banana': 5,
+    'orange': 2
+}
+
+for fruit in fruits:  # iteracja po kluczach
+    print(fruit)  # wyświetlenie nazwy owocu
+
+for count in fruits.values():  # iteracja po wartościach
+    print(count)  # wyświetlenie ilości
+
+for fruit, count in fruits.items():  # iteracja po parach klucz-wartość
+    print(f"The count of {fruit} is {count}")  # wyświetlenie komunikatu
+    
+    person = {  # słownik osoby
+    'name': 'Alice',  # imię
+    'age': 30  # wiek
+}
+
+if 'name' in person:  # sprawdzenie czy klucz istnieje
+    print("Name is present in the dictionary.")  # komunikat gdy istnieje
+else:  # w przeciwnym przypadku
+    print("Name is not present.")  # komunikat gdy nie istnieje
