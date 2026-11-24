@@ -1,4 +1,4 @@
-# ===== Zadanie 13 =====
+# ===== Zadanie 14 =====
 
 # import klasy Ebook z pliku ebook.py
 from ebook import Ebook
